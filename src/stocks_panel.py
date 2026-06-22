@@ -124,7 +124,7 @@ class stocks(QWidget):
         self.status_bar = status_bar
         self.player = player
         layout = QVBoxLayout()
-        layout.setMargin(0)
+        layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
 
         self.viewerModel = QStandardItemModel()
@@ -135,7 +135,7 @@ class stocks(QWidget):
         self.list_widget.selectionModel().selectionChanged.connect(self.clicked_item)
 
         filter_layout = QHBoxLayout()
-        filter_layout.setMargin(0)
+        filter_layout.setContentsMargins(0, 0, 0, 0)
         filter_widget = QWidget()
         filter_widget.setLayout(filter_layout)
 
@@ -167,7 +167,7 @@ class stocks(QWidget):
         filter_layout.addWidget(self.tag_filter)
 
         display_layout = QHBoxLayout()
-        display_layout.setMargin(0)
+        display_layout.setContentsMargins(0, 0, 0, 0)
         display_widget = QWidget()
         display_widget.setLayout(display_layout)
 

@@ -69,10 +69,10 @@ class stock_manager_widget(panel_widget):
         self.mounted = True
 
         layout = QVBoxLayout()
-        layout.setMargin(0)
+        layout.setContentsMargins(0, 0, 0, 0)
 
         viewer_layout = QVBoxLayout()
-        viewer_layout.setMargin(0)
+        viewer_layout.setContentsMargins(0, 0, 0, 0)
         viewer = QWidget()
         viewer.setLayout(viewer_layout)
 

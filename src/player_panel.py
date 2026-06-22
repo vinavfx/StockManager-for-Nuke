@@ -36,7 +36,7 @@ class player(QWidget):
     def __init__(self, parent=None):
         QWidget.__init__(self, parent)
         layout = QVBoxLayout()
-        layout.setMargin(0)
+        layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(layout)
 
         self.timeline = QTimeLine()
@@ -46,7 +46,7 @@ class player(QWidget):
         self.timeline.finished.connect(self.stop)
 
         control_layout = QHBoxLayout()
-        control_layout.setMargin(0)
+        control_layout.setContentsMargins(0, 0, 0, 0)
         control_widget = QWidget()
         control_widget.setLayout(control_layout)
 
